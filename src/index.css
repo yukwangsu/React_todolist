@@ -1,0 +1,21 @@
+:root {
+  max-width: 1280px;
+  min-width: 60%;
+  text-align: center;
+  background: rgb(226, 226, 226);
+}
+
+* {
+  margin: 0;
+  /*
+  기본적으로, 요소의 너비와 높이는 content-box로 계산되며, 
+  이 경우 요소의 실제 너비는 width 또는 height 값에 
+  padding과 border의 크기를 더한 값이 됩니다.
+
+  그러나 box-sizing: border-box;를 사용하면, 
+  요소의 너비와 높이에 padding과 border가 포함됩니다. 
+  즉, 요소의 width와 height 값이 요소의 총 너비와 높이가 되고,
+  이 범위 내에서 padding과 border가 차지하는 공간이 자동으로 조정됩니다.
+  */
+  box-sizing: border-box;
+}

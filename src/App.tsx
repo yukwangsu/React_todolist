@@ -38,22 +38,24 @@ function App() {
   return (
     <>
       <div className="main">
-        <div className="title">
-          <h2 className="title_text">pangsu의 react to-do list</h2>
-        </div>
-        <div>
-          <input
-            className="input"
-            type="text"
-            onFocus={() => {
-              setIsFocused(true);
-            }}
-            onBlur={() => {
-              setIsFocused(false);
-            }}
-            placeholder={isFocused ? "" : defaultValue}
-            onKeyDown={(e) => keyDown(e)}
-          ></input>
+        <div className="header">
+          <div className="title">
+            <h2 className="title_text">pangsu의 react to-do list</h2>
+          </div>
+          <div className="input_back">
+            <input
+              className="input"
+              type="text"
+              onFocus={() => {
+                setIsFocused(true);
+              }}
+              onBlur={() => {
+                setIsFocused(false);
+              }}
+              placeholder={isFocused ? "" : defaultValue}
+              onKeyDown={(e) => keyDown(e)}
+            ></input>
+          </div>
         </div>
         <div className="list">
           <div

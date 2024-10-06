@@ -5,6 +5,13 @@
   height: 100vh;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .title {
   background: black;
   color: white;
@@ -15,22 +22,30 @@
   margin: 10px;
 }
 
+.input_back {
+  background: rgb(226, 226, 226, 0.8);
+}
+
 .input {
   height: 50px;
   width: 50%;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 10px;
+  margin-left: 10px;
   border-radius: 10px;
+  padding-left: 10px;
 }
 
 .list {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column-reverse;
   width: 100%;
   align-items: center;
   /* gap: 10px; */
   overflow-y: auto;
+  padding-top: 150px;
 }
 
 .element {
@@ -60,7 +75,6 @@
 
 .spaceBetweenElement {
   display: flex;
-  height: 10px;
   width: 50%;
 }
 

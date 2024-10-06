@@ -3,6 +3,9 @@
   min-width: 60%;
   text-align: center;
   background: rgb(226, 226, 226);
+  /* scrollbar-gutter: stable; */
+  overflow-y: scroll; /* 세로 스크롤바를 항상 유지 */
+  overflow-x: hidden;
 }
 
 * {
